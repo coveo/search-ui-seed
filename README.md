@@ -30,3 +30,11 @@ The code is written in [typescript](http://www.typescriptlang.org/) and compiled
 * `npm run css` will build the sass files into a css file in the `bin` folder.
 * `npm run build` will run the `setup`, `css` task, then compile the typescript code.
 
+## Dev
+
+`npm run dev` will start a (webpack dev server)[https://webpack.github.io/docs/webpack-dev-server.html]. After it finishes, load `localhost:8080` in a browser, and the `index.html` page should load.
+
+Then, anytime you hit save in a typescript file, the server will reload your application.
+
+## Todo
+Setup unit tests.
