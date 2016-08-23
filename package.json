@@ -1,0 +1,40 @@
+{
+  "name": "search-ui-seed",
+  "version": "1.0.0",
+  "description": "A fast starter / seed project to extend the Coveo Javascript Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "node setup.js",
+    "build": "npm run setup && npm run css && webpack",
+    "minimize": "webpack --minimize",
+    "css": "node css.js",
+    "dev": "node dev.server.js"
+  },
+  "keywords": [
+    "coveo",
+    "search",
+    "ui",
+    "framework",
+    "js",
+    "typescript",
+    "jssearch",
+    "jsui",
+    "starter",
+    "seed"
+  ],
+  "author": "Coveo <sandbox_JSUI@coveo.com> (http://source.coveo.com/)",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "node-sass": "^3.8.0",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0",
+    "webpack-fail-plugin": "^1.0.5"
+  },
+  "dependencies": {
+    "coveo-search-ui": "1.x.x"
+  }
+}
