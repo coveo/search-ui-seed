@@ -16,11 +16,11 @@ The code is written in [typescript](http://www.typescriptlang.org/) and compiled
 
 * Under the `pages` folder, you have a working search page. At build time, it is copied to the `bin` folder.
     * It references 2 style sheets (the base one from the Coveo Javascript Search Framework, and the one from the extension).
-    * It references 2 javascript file (the extension one built in this project, and the basic templates).
+    * It references 3 javascript file (the extension one built in this project, and the basic templates and library scripts).
 
 * Under the `src` folder, you have all the typescript source code.
     * The `src/ui/HelloWorld.ts` file is a sample/demo component
-    * The `src/Index.ts` file is the starting point of the application. NB : The `require('coveo-search-ui')` line is needed to import the base framework into your project. Without this line, you would need to manually reference the standard `CoveoJsSearch.js` file in the `Index.html` page, in a script tag. This line allows you to build a single bundle containing everything.
+    * The `src/Index.ts` file is the starting point of the application.
 
 * Under the `sass` folder, you have all the css for the extension.
 
