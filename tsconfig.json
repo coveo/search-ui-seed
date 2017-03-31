@@ -6,9 +6,8 @@
     "experimentalDecorators": true,
     "outDir": "./bin"
   },
-  "files": [
-    "node_modules/coveo-search-ui/bin/ts/CoveoJsSearch.d.ts",
-    "src/Index.ts",
-    "src/ui/HelloWorld.ts"
+  "files":[
+    "./node_modules/coveo-search-ui/bin/ts/CoveoJsSearch.d.ts",
+    "./src/Index.ts"
   ]
 }

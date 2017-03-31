@@ -1,10 +1,12 @@
-import Component = Coveo.Component;
-import ComponentOptions = Coveo.ComponentOptions;
-import IComponentBindings = Coveo.IComponentBindings;
-import $$ = Coveo.$$;
-import QueryEvents = Coveo.QueryEvents;
-import IBuildingQueryEventArgs = Coveo.IBuildingQueryEventArgs;
-import Initialization = Coveo.Initialization;
+import {
+  Component,
+  ComponentOptions,
+  IComponentBindings,
+  $$,
+  QueryEvents,
+  IBuildingQueryEventArgs,
+  Initialization
+} from "coveo-search-ui";
 
 export interface IHelloWorldOptions {
   dummyOptionText: string;
