@@ -27,6 +27,9 @@ module.exports = {
     library: 'CoveoExtension',
     publicPath: '/js/'
   },
+  externals: {
+    "coveo-search-ui":"Coveo"
+  },
   resolve: {
     extensions: ['.ts', '.js'],
   },
