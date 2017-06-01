@@ -6,8 +6,8 @@
     "noImplicitAny": false,
     "sourceMap": false
   },
-  "files": [
-    "./node_modules/coveo-search-ui/bin/ts/CoveoJsSearch.d.ts",
-    "./src/Index.ts"
+  "include": [
+    "src/**/*.ts",
+    "./node_modules/coveo-search-ui/bin/ts/CoveoJsSearch.d.ts"
   ]
 }

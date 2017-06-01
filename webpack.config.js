@@ -19,7 +19,7 @@ if (minimize) {
 
 
 module.exports = {
-  entry: ['./src/Index.ts'],
+  entry: ['./src/Index'],
   output: {
     path: require('path').resolve('./bin/js'),
     filename: minimize ? `${fileName}.min.js` : `${fileName}.js`,
