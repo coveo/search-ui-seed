@@ -24,6 +24,8 @@ The code is written in [typescript](http://www.typescriptlang.org/) and compiled
 
 * Under the `sass` folder, you have all the css for the extension.
 
+* This project is also used in the [Search UI tutorial](https://developers.coveo.com/x/J4okAg). You are invited to consult this tutorial if you are unfamilar with Coveo. The last few steps of the tutorial explains an advanced integration with a custom component written in Typescript. It explains how to transform the Hello World component into something useful.
+
 ## Build task
 
 * `npm run setup ` will copy the needed ressources (`index.html`, `templates`, etc.) in the `bin` folder.
