@@ -1,1 +1,1 @@
-export {HelloWorld} from './ui/HelloWorld';
+export { HelloWorld } from './ui/HelloWorld';

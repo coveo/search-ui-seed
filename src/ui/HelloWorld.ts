@@ -1,10 +1,12 @@
-import Component = Coveo.Component;
-import ComponentOptions = Coveo.ComponentOptions;
-import IComponentBindings = Coveo.IComponentBindings;
-import $$ = Coveo.$$;
-import QueryEvents = Coveo.QueryEvents;
-import IBuildingQueryEventArgs = Coveo.IBuildingQueryEventArgs;
-import Initialization = Coveo.Initialization;
+import {
+  Component,
+  ComponentOptions,
+  IComponentBindings,
+  $$,
+  QueryEvents,
+  IBuildingQueryEventArgs,
+  Initialization
+} from 'coveo-search-ui';
 
 export interface IHelloWorldOptions {
   dummyOptionText: string;
@@ -15,8 +17,12 @@ export class HelloWorld extends Component {
   static ID = 'HelloWorld';
 
   static options: IHelloWorldOptions = {
-    dummyOptionText: ComponentOptions.buildStringOption({defaultValue: 'Hello world'}),
-    dummyOptionQuery: ComponentOptions.buildStringOption({defaultValue: '@uri'})
+    dummyOptionText: ComponentOptions.buildStringOption({
+      defaultValue: 'Hello world'
+    }),
+    dummyOptionQuery: ComponentOptions.buildStringOption({
+      defaultValue: '@uri'
+    })
   };
 
   constructor(public element: HTMLElement, public options: IHelloWorldOptions, public bindings: IComponentBindings) {
@@ -25,7 +31,7 @@ export class HelloWorld extends Component {
 
     $$(this.element).text(this.options.dummyOptionText);
 
-    this.bind.onRootElement(QueryEvents.buildingQuery, (args: IBuildingQueryEventArgs)=> this.handleBuildingQuery(args));
+    this.bind.onRootElement(QueryEvents.buildingQuery, (args: IBuildingQueryEventArgs) => this.handleBuildingQuery(args));
   }
 
   private handleBuildingQuery(args: IBuildingQueryEventArgs) {

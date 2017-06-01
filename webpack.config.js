@@ -8,6 +8,8 @@ if (minimize) {
   console.log('Building non minified version of the library'.bgGreen.red);
 }
 
+const fileName = `coveo.extension`;
+
 // Fail plugin will allow the webpack ts-loader to fail correctly when the TS compilation fails
 var plugins = [failPlugin];
 
@@ -20,19 +22,23 @@ module.exports = {
   entry: ['./src/Index.ts'],
   output: {
     path: require('path').resolve('./bin/js'),
-    filename: minimize ? 'coveo.extension.min.js' : 'coveo.extension.js',
+    filename: minimize ? `${fileName}.min.js` : `${fileName}.js`,
     libraryTarget: 'umd',
     library: 'CoveoExtension',
     publicPath: '/js/'
   },
+  externals: {
+    "coveo-search-ui":"Coveo"
+  },
   resolve: {
-    extensions: ['', '.ts', '.js'],
+    extensions: ['.ts', '.js'],
   },
   devtool: 'source-map',
   module: {
-    loaders: [
-      {test: /\.ts$/, loader: 'ts-loader'}
-    ]
+    rules: [{
+      test: /\.ts$/, 
+      loader: 'ts-loader'
+    }]
   },
   plugins: plugins,
   bail: true
