@@ -13,9 +13,6 @@ const directoriesToCreate = [
 const filesToCopy = [{
   "src":'./node_modules/coveo-search-ui/bin/css/CoveoFullSearch.css',
   "dest":'./bin/css/CoveoFullSearch.css'
-},{
-  "src":'./pages/index.html',
-  "dest":'./bin/index.html'
 }];
 
 const folderToCopy = [{
@@ -27,6 +24,9 @@ const folderToCopy = [{
 },{
   "src":'./templates',
   "dest":'./bin/templates'
+},{
+  "src":'./pages',
+  "dest":'./bin'
 }];
 
 directoriesToCreate.filter(directory => !fs.existsSync(directory))
