@@ -1,25 +1,36 @@
 'use strict';
-let fs = require('fs');
+const fs = require('fs');
+const ncp = require('ncp').ncp;
 
-if (!fs.existsSync('./bin')) {
-  fs.mkdirSync('./bin');
-}
+const directoriesToCreate = [
+  "./bin",
+  "./bin/css",
+  "./bin/image",
+  "./bin/js",
+  "./bin/templates"
+]
 
-if (!fs.existsSync('./bin/css')) {
-  fs.mkdirSync('./bin/css');
-}
+const filesToCopy = [{
+  "src":'./node_modules/coveo-search-ui/bin/css/CoveoFullSearch.css',
+  "dest":'./bin/css/CoveoFullSearch.css'
+},{
+  "src":'./pages/index.html',
+  "dest":'./bin/index.html'
+}];
 
-if (!fs.existsSync('./bin/image')) {
-  fs.mkdirSync('./bin/image');
-}
+const folderToCopy = [{
+  "src": "./node_modules/coveo-search-ui/bin/js",
+  "dest" : "./bin/js"
+},{
+  "src":'./node_modules/coveo-search-ui/bin/image',
+  "dest":'./bin/image'
+},{
+  "src":'./templates',
+  "dest":'./bin/templates'
+}];
 
-if (!fs.existsSync('./bin/js')) {
-  fs.mkdirSync('./bin/js');
-}
+directoriesToCreate.filter(directory => !fs.existsSync(directory))
+                   .forEach(directory => fs.mkdirSync(directory));
 
-fs.createReadStream('./node_modules/coveo-search-ui/bin/css/CoveoFullSearchNewDesign.css').pipe(fs.createWriteStream('./bin/css/CoveoFullSearchNewDesign.css'));
-fs.createReadStream('./node_modules/coveo-search-ui/bin/image/spritesNew.png').pipe(fs.createWriteStream('./bin/image/spritesNew.png'));
-fs.createReadStream('./node_modules/coveo-search-ui/bin/image/retinaNew.png').pipe(fs.createWriteStream('./bin/image/retinaNew.png'));
-fs.createReadStream('./node_modules/coveo-search-ui/bin/js/templates/templatesNew.js').pipe(fs.createWriteStream('./bin/js/templatesNew.js'));
-fs.createReadStream('./node_modules/coveo-search-ui/bin/js/CoveoJsSearch.js').pipe(fs.createWriteStream('./bin/js/CoveoJsSearch.js'));
-fs.createReadStream('./pages/index.html').pipe(fs.createWriteStream('./bin/index.html'));
+filesToCopy.forEach(file => fs.createReadStream(file.src).pipe(fs.createWriteStream(file.dest)))
+folderToCopy.forEach(folder => ncp(folder.src, folder.dest));

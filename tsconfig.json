@@ -8,6 +8,6 @@
   },
   "include": [
     "src/**/*.ts",
-    "./node_modules/coveo-search-ui/bin/ts/CoveoJsSearch.d.ts"
+    "lib/webpack.d.ts"
   ]
 }

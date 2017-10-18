@@ -8,8 +8,6 @@ if (minimize) {
   console.log('Building non minified version of the library'.bgGreen.red);
 }
 
-const fileName = `coveo.extension`;
-
 // Fail plugin will allow the webpack ts-loader to fail correctly when the TS compilation fails
 var plugins = [failPlugin];
 
@@ -19,15 +17,21 @@ if (minimize) {
 
 
 module.exports = {
-  entry: ['./src/Index'],
+  entry: {
+    'coveo.extension': './src/Index',
+    'coveo.extension.lazy': './src/LazyIndex'
+  },
   output: {
     path: require('path').resolve('./bin/js'),
-    filename: minimize ? `${fileName}.min.js` : `${fileName}.js`,
+    // Output a filename based on the entry. This will generate coveo.extension.js and coveo.extension.lazy.js.
+    filename: minimize ? `[name].min.js` : `[name].js`,
     libraryTarget: 'umd',
     library: 'CoveoExtension',
     publicPath: '/js/'
   },
   externals: {
+    // Defines the module "coveo-search-ui" as external, "Coveo" is defined in the global scope. 
+    // This requires you to load the original CoveoJsSearch.js file in your page.
     "coveo-search-ui":"Coveo"
   },
   resolve: {
