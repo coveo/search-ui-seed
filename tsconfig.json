@@ -9,5 +9,8 @@
   "include": [
     "src/**/*.ts",
     "lib/webpack.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
