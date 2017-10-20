@@ -24,6 +24,8 @@ The code is written in [typescript](http://www.typescriptlang.org/) and compiled
 
 * Under the `sass` folder, you have all the css for the extension.
 
+* Under the `tests` folder, you have all the tests for the custom components.
+
 * This project is also used in the [Search UI tutorial](https://developers.coveo.com/x/J4okAg). You are invited to consult this tutorial if you are unfamilar with Coveo. The last few steps of the tutorial explains an advanced integration with a custom component written in Typescript. It explains how to transform the Hello World component into something useful.
 
 ## Build task
@@ -38,5 +40,24 @@ The code is written in [typescript](http://www.typescriptlang.org/) and compiled
 
 Then, anytime you hit save in a typescript file, the server will reload your application.
 
-## Todo
-Setup unit tests.
+## Tests
+
+* `npm run test` will execute the tests one time and give you the report
+* `npm run watchTest` will watch changes and reexecute the tests and coverage when saving a file.
+
+## Useful Visual Studio Code Extensions
+
+If you are using Visual Studio Code, you can install the following extensions:
+
+### [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
+
+Shows inline linter problems in the code based on the `tslint.json` file. This will ensure that you are consistent with the formatting standards. 
+
+### [Coverage Gutters](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters)
+
+Shows test coverage directly in the code.
+
+Execute the `Coverage Gutters: Watch Lcov File and Visible Editors` command in conjuction with `npm run watchTest` to have live updates of the coverage, like the following image:
+
+![Coverage Example](./helloworld_coverage.png "Coverage Example")
+
