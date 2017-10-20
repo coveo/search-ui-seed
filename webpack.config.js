@@ -18,12 +18,11 @@ if (minimize) {
 
 module.exports = {
   entry: {
-    'coveo.extension': './src/Index',
-    'coveo.extension.lazy': './src/LazyIndex'
+    'coveo.extension': './src/Index'
   },
   output: {
     path: require('path').resolve('./bin/js'),
-    // Output a filename based on the entry. This will generate coveo.extension.js and coveo.extension.lazy.js.
+    // Output a filename based on the entry. This will generate a "coveo.extension.js" file.
     filename: minimize ? `[name].min.js` : `[name].js`,
     libraryTarget: 'umd',
     library: 'CoveoExtension',
