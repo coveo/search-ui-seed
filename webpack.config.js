@@ -18,8 +18,7 @@ if (minimize) {
 
 module.exports = {
   entry: {
-    'coveo.extension': './src/Index',
-    'coveo.extension.lazy': './src/LazyIndex'
+    'coveo.extension': './src/Index'
   },
   output: {
     path: require('path').resolve('./bin/js'),
