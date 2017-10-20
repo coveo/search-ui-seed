@@ -27,16 +27,17 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "colors": "^1.1.2",
+    "ncp": "^2.0.0",
     "node-sass": "^3.8.0",
-    "ts-loader": "^2.0.3",
-    "tslint": "^5.0.0",
-    "typescript": "2.3.4",
-    "webpack": "^2.3.2",
-    "webpack-dev-server": "^2.4.2",
+    "ts-loader": "^2.3.7",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.3",
+    "webpack": "^2.7.0",
+    "webpack-dev-server": "^2.9.2",
     "webpack-fail-plugin": "^1.0.6",
-    "yargs": "^7.0.2"
+    "yargs": "^7.1.0"
   },
   "dependencies": {
-    "coveo-search-ui": "1.x.x"
+    "coveo-search-ui": "^2.3477.1"
   }
 }

@@ -7,7 +7,6 @@
     "sourceMap": false
   },
   "include": [
-    "src/**/*.ts",
-    "./node_modules/coveo-search-ui/bin/ts/CoveoJsSearch.d.ts"
+    "src/**/*.ts"
   ]
 }
