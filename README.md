@@ -21,7 +21,6 @@ The code is written in [typescript](http://www.typescriptlang.org/) and compiled
 * Under the `src` folder, you have all the typescript source code.
     * The `src/ui/HelloWorld.ts` file is a sample/demo component
     * The `src/Index.ts` file is the starting point of the application.
-    * The `src/LazyIndex.ts` file is the starting point of the application for Lazy Loading mode.
 
 * Under the `sass` folder, you have all the css for the extension.
 
