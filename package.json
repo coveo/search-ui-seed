@@ -47,9 +47,8 @@
     "webpack": "^2.7.0",
     "webpack-dev-server": "^2.9.2",
     "webpack-fail-plugin": "^1.0.6",
-    "yargs": "^7.1.0"
-  },
-  "dependencies": {
-    "coveo-search-ui": "^2.3477.1"
+    "yargs": "^7.1.0",
+    "coveo-search-ui": "^2.3477.1",
+    "jquery": "^3.3.1"
   }
 }
