@@ -39,7 +39,7 @@ The code is written in [typescript](http://www.typescriptlang.org/) and compiled
 
 ## Dev
 
-`npm run watch` will start a [webpack dev server](https://webpack.github.io/docs/webpack-dev-server.html). After it finishes, load [http://localhost:3000](http://localhost:3000) in a browser, and the `index.html` page should load.
+`npm run watch` will start a [webpack dev server](https://webpack.js.org/concepts/). After it finishes, load [http://localhost:3000](http://localhost:3000) in a browser, and the `index.html` page should load.
 
 Then, anytime you hit save in a typescript file, the server will reload your application.
 
@@ -59,8 +59,4 @@ Shows inline linter problems in the code based on the `tslint.json` file. This w
 ### [Coverage Gutters](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters)
 
 Shows test coverage directly in the code.
-
-Execute the `Coverage Gutters: Watch Lcov File and Visible Editors` command in conjuction with `npm run watchTest` to have live updates of the coverage, like the following image:
-
-![Coverage Example](./helloworld_coverage.png "Coverage Example")
 
