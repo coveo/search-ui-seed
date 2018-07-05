@@ -56,7 +56,4 @@ If you are using Visual Studio Code, you can install the following extensions:
 
 Shows inline linter problems in the code based on the `tslint.json` file. This will ensure that you are consistent with the formatting standards. 
 
-### [Coverage Gutters](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters)
-
-Shows test coverage directly in the code.
 
