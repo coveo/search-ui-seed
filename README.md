@@ -3,6 +3,9 @@ A fast starter / seed project to extend the Coveo Javascript Framework
 
 This project is meant to display a working starting point for a project that wish to extend the [Coveo Javascript Search Framework](https://github.com/coveo/search-ui) with additional components.
 
+## Requirements
+Node JS => 8.0
+
 ## Setup
 
 1. Fork / clone the repository.
