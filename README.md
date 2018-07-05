@@ -36,7 +36,7 @@ The code is written in [typescript](http://www.typescriptlang.org/) and compiled
 
 ## Dev
 
-`npm run dev` will start a [webpack dev server](https://webpack.github.io/docs/webpack-dev-server.html). After it finishes, load [http://localhost:8080/index.html](http://localhost:8080/index.html) in a browser, and the `index.html` page should load.
+`npm run watch` will start a [webpack dev server](https://webpack.github.io/docs/webpack-dev-server.html). After it finishes, load [http://localhost:3000](http://localhost:3000) in a browser, and the `index.html` page should load.
 
 Then, anytime you hit save in a typescript file, the server will reload your application.
 
