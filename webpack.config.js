@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const minimize = process.argv.indexOf('--minimize') !== -1;
+const path = require("path");
 const colors = require('colors');
 const failPlugin = require('webpack-fail-plugin');
 if (minimize) {
@@ -8,25 +9,17 @@ if (minimize) {
   console.log('Building non minified version of the library'.bgGreen.red);
 }
 
-// Fail plugin will allow the webpack ts-loader to fail correctly when the TS compilation fails
-var plugins = [failPlugin];
-
-if (minimize) {
-  plugins.push(new webpack.optimize.UglifyJsPlugin());
-}
-
-
-module.exports = {
+module.exports = [{
+  mode: minimize ? 'production' : 'development',
+  devtool: 'source-map',
   entry: {
-    'coveo.extension': './src/Index'
+    'coveo.extension': path.resolve(__dirname,'./src/Index')
   },
   output: {
     path: require('path').resolve('./bin/js'),
     // Output a filename based on the entry. This will generate a "coveo.extension.js" file.
     filename: minimize ? `[name].min.js` : `[name].js`,
-    libraryTarget: 'umd',
-    library: 'CoveoExtension',
-    publicPath: '/js/'
+    library: 'CoveoExtension'
   },
   externals: [{
     // Defines the module "coveo-search-ui" as external, "Coveo" is defined in the global scope. 
@@ -36,7 +29,6 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.js'],
   },
-  devtool: 'source-map',
   module: {
     rules: [{
       test: /\.ts$/, 
@@ -44,6 +36,5 @@ module.exports = {
       options: {}
     }]
   },
-  plugins: plugins,
   bail: true
-}
+}]
