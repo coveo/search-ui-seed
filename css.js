@@ -7,4 +7,4 @@ let result = sass.renderSync({
   outFile: './bin/css/coveoextension.css'
 })
 
-fs.writeFile('./bin/css/coveoextension.css', result.css);
+fs.writeFileSync('./bin/css/coveoextension.css', result.css);

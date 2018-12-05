@@ -3,6 +3,9 @@ A fast starter / seed project to extend the Coveo Javascript Framework
 
 This project is meant to display a working starting point for a project that wish to extend the [Coveo Javascript Search Framework](https://github.com/coveo/search-ui) with additional components.
 
+## Requirements
+Node JS => 8.0
+
 ## Setup
 
 1. Fork / clone the repository.
@@ -36,7 +39,7 @@ The code is written in [typescript](http://www.typescriptlang.org/) and compiled
 
 ## Dev
 
-`npm run dev` will start a [webpack dev server](https://webpack.github.io/docs/webpack-dev-server.html). After it finishes, load [http://localhost:8080/index.html](http://localhost:8080/index.html) in a browser, and the `index.html` page should load.
+`npm run watch` will start a [webpack dev server](https://webpack.js.org/concepts/). After it finishes, load [http://localhost:3000](http://localhost:3000) in a browser, and the `index.html` page should load.
 
 Then, anytime you hit save in a typescript file, the server will reload your application.
 
@@ -53,11 +56,4 @@ If you are using Visual Studio Code, you can install the following extensions:
 
 Shows inline linter problems in the code based on the `tslint.json` file. This will ensure that you are consistent with the formatting standards. 
 
-### [Coverage Gutters](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters)
-
-Shows test coverage directly in the code.
-
-Execute the `Coverage Gutters: Watch Lcov File and Visible Editors` command in conjuction with `npm run watchTest` to have live updates of the coverage, like the following image:
-
-![Coverage Example](./helloworld_coverage.png "Coverage Example")
 

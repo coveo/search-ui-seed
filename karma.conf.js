@@ -35,7 +35,7 @@ var configuration = {
         fixWebpackSourcePaths: true
     },
     webpack: webpackConfig,
-    browsers:['PhantomJS']
+    browsers:['ChromeHeadless']
 };
 
 module.exports = function(config) {
