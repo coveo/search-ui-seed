@@ -10,7 +10,9 @@
     "minimize": "webpack --minimize",
     "css": "node css.js",
     "watch": "npm run setup && npm run css && webpack-serve --config webpack-serve.config --progress --colors",
-    "watchTest": "karma start"
+    "watchTest": "karma start",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "coveo",
@@ -32,12 +34,12 @@
     "coveo-search-ui": "^2.4382.8",
     "coveo-search-ui-tests": "0.0.5",
     "istanbul-instrumenter-loader": "^3.0.0",
-    "jasmine": "^2.8.0",
+    "jasmine": "^3.1.0",
     "jquery": "^3.3.1",
     "karma": "^3.1.3",
     "karma-chrome-launcher": "^2.2.0",
     "karma-coverage-istanbul-reporter": "^1.3.0",
-    "karma-jasmine": "^1.1.0",
+    "karma-jasmine": "^1.1.1",
     "karma-spec-reporter": "0.0.31",
     "karma-webpack": "^3.0.0",
     "koa-router": "^7.4.0",
@@ -47,12 +49,16 @@
     "node-sass": "^4.9.0",
     "string-replace-webpack-plugin": "^0.1.3",
     "ts-loader": "^4.4.2",
-    "tslint": "^5.7.0",
+    "tslint": "^5.9.1",
     "typescript": "^2.9.1",
     "webpack": "^4.14.0",
     "webpack-cli": "^3.0.8",
     "webpack-fail-plugin": "^1.0.6",
     "webpack-serve": "^0.3.1",
     "ws": "^5.1.1"
+  },
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.89.0"
   }
 }
