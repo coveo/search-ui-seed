@@ -5,27 +5,27 @@ ignore: {}
 patch:
   'npm:hoek:20180212':
     - coveo-search-ui > coveo-styleguide > coveo-slider > tsd > definition-header > joi > hoek:
-        patched: '2018-12-05T15:45:30.428Z'
+        patched: '2018-12-05T15:55:42.869Z'
     - coveo-search-ui-tests > coveo-search-ui > coveo-styleguide > coveo-slider > tsd > joi > hoek:
-        patched: '2018-12-05T15:45:30.428Z'
+        patched: '2018-12-05T15:55:42.869Z'
     - coveo-search-ui > coveo-styleguide > coveo-slider > tsd > definition-header > joi > topo > hoek:
-        patched: '2018-12-05T15:45:30.428Z'
+        patched: '2018-12-05T15:55:42.869Z'
     - coveo-search-ui-tests > coveo-search-ui > coveo-styleguide > coveo-slider > tsd > joi > topo > hoek:
-        patched: '2018-12-05T15:45:30.428Z'
+        patched: '2018-12-05T15:55:42.869Z'
     - coveo-search-ui-tests > coveo-search-ui > coveo-styleguide > coveo-slider > tsd > definition-header > joi > hoek:
-        patched: '2018-12-05T15:45:30.428Z'
+        patched: '2018-12-05T15:55:42.869Z'
     - coveo-search-ui-tests > coveo-search-ui > coveo-styleguide > coveo-slider > tsd > definition-header > joi > topo > hoek:
-        patched: '2018-12-05T15:45:30.428Z'
+        patched: '2018-12-05T15:55:42.869Z'
     - coveo-search-ui > coveo-styleguide > coveo-slider > tsd > joi > topo > hoek:
-        patched: '2018-12-05T15:45:30.428Z'
+        patched: '2018-12-05T15:55:42.869Z'
     - coveo-search-ui > coveo-styleguide > coveo-slider > tsd > joi > hoek:
-        patched: '2018-12-05T15:45:30.428Z'
+        patched: '2018-12-05T15:55:42.869Z'
   'npm:minimatch:20160620':
     - coveo-search-ui-tests > coveo-search-ui > coveo-styleguide > coveo-slider > tsd > glob > minimatch:
-        patched: '2018-12-05T15:45:30.428Z'
+        patched: '2018-12-05T15:55:42.869Z'
     - coveo-search-ui > coveo-styleguide > coveo-slider > tsd > minimatch:
-        patched: '2018-12-05T15:45:30.428Z'
+        patched: '2018-12-05T15:55:42.869Z'
     - coveo-search-ui-tests > coveo-search-ui > coveo-styleguide > coveo-slider > tsd > minimatch:
-        patched: '2018-12-05T15:45:30.428Z'
+        patched: '2018-12-05T15:55:42.869Z'
     - coveo-search-ui > coveo-styleguide > coveo-slider > tsd > glob > minimatch:
-        patched: '2018-12-05T15:45:30.428Z'
+        patched: '2018-12-05T15:55:42.869Z'
