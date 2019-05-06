@@ -22,7 +22,7 @@ module.exports = [{
     library: 'CoveoExtension'
   },
   externals: [{
-    // Defines the module "coveo-search-ui" as external, "Coveo" is defined in the global scope. 
+    // Defines the module "coveo-search-ui" as external, "Coveo" is defined in the global scope.
     // This requires you to load the original CoveoJsSearch.js file in your page.
     "coveo-search-ui":"Coveo"
   }],
@@ -31,7 +31,7 @@ module.exports = [{
   },
   module: {
     rules: [{
-      test: /\.ts$/, 
+      test: /\.ts$/,
       loader: 'ts-loader',
       options: {}
     }]
