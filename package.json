@@ -29,24 +29,24 @@
   "author": "Coveo <sandbox_JSUI@coveo.com> (http://source.coveo.com/)",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@types/jasmine": "^3.5.2",
+    "@types/jasmine": "^3.5.3",
     "colors": "^1.4.0",
-    "coveo-search-ui": "^2.7968.10",
+    "coveo-search-ui": "^2.7968.16",
     "coveo-search-ui-tests": "0.0.7",
     "jasmine": "^3.5.0",
     "karma": "^4.4.1",
     "karma-chrome-launcher": "^3.1.0",
     "karma-coverage-istanbul-reporter": "^2.1.1",
-    "karma-jasmine": "^3.1.0",
+    "karma-jasmine": "^3.1.1",
     "karma-spec-reporter": "0.0.32",
     "karma-webpack": "^4.0.2",
-    "koa-router": "^8.0.6",
+    "koa-router": "^8.0.7",
     "ncp": "^2.0.0",
     "node-sass": "^4.13.1",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.5",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
     "webpack-fail-plugin": "^2.0.0",
     "webpack-nano": "^0.8.1",
     "webpack-plugin-serve": "^0.12.1",
@@ -55,6 +55,6 @@
   },
   "snyk": true,
   "dependencies": {
-    "snyk": "^1.288.0"
+    "snyk": "^1.291.0"
   }
 }
