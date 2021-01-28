@@ -9,7 +9,7 @@
     "build": "npm run setup && npm run css && webpack",
     "minimize": "webpack --minimize",
     "css": "node css.js",
-    "watch": "npm run setup && npm run css && npx webpack --config webpack-serve.config --progress",
+    "watch": "npm run setup && npm run css && npx webpack --config webpack-serve.config.js --progress",
     "watchTest": "karma start",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
