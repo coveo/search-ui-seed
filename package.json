@@ -12,7 +12,8 @@
     "watch": "npm run setup && npm run css && npx webpack --config webpack-serve.config.js --progress",
     "watchTest": "karma start",
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "prepare": "npm run snyk-protect",
+    "start": "npm run setup && npm run css && npx webpack --config webpack-serve.config.js --progress"
   },
   "keywords": [
     "coveo",
