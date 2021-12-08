@@ -11,13 +11,15 @@
     <script src="js/templates/templates.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        Coveo.SearchEndpoint.configureSampleEndpointV2();
+        Coveo.SearchEndpoint.configureCloudV2Endpoint(
+          "thudoncoveocomvariableleoponjxjdn7fe",
+          "xxebcb2c46-1403-42bd-8622-e5462d67c6c8"
+        );
         Coveo.init(document.body);
       })
     </script>
   </head>
   <body id="search" class='CoveoSearchInterface' data-enable-history="true">
-    <div class="CoveoHelloWorld"></div>
     <div class="coveo-tab-section">
       <a class="CoveoTab" data-id="All" data-caption="All Content"></a>
     </div>
@@ -29,9 +31,6 @@
       <div class="coveo-facet-column">
         <div class="CoveoFacet" data-title="Type" data-field="@objecttype" data-tab="All"></div>
         <div class="CoveoFacet" data-title="FileType" data-field="@filetype" data-tab="All"></div>
-        <div class="CoveoFacet" data-title="Author" data-field="@author" data-tab="All"></div>
-        <div class="CoveoFacet" data-title="Year" data-field="@year" data-tab="All"></div>
-        <div class="CoveoFacet" data-title="Month" data-field="@month" data-tab="All"></div>
       </div>
       <div class="coveo-results-column">
         <div class="CoveoShareQuery"></div>
