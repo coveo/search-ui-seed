@@ -1,10 +1,7 @@
 'use strict';
-let sass = require('node-sass');
-let fs = require('fs');
+const sass = require('sass');
+const fs = require('fs');
 
-let result = sass.renderSync({
-  file: './sass/Index.scss',
-  outFile: './bin/css/coveoextension.css'
-})
+const result = sass.compile('./sass/Index.scss')
 
 fs.writeFileSync('./bin/css/coveoextension.css', result.css);
