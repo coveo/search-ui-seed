@@ -46,7 +46,8 @@
     "ts-loader": "^9.3.0",
     "typescript": "^4.6.4",
     "webpack": "^5.72.1",
-    "webpack-cli": "^4.9.2",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.1",
     "webpack-nano": "^1.1.1",
     "webpack-plugin-serve": "^1.6.0",
     "ws": "^8.6.0"
